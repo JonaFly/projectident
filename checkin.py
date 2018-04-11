@@ -26,5 +26,6 @@ r=s.post('http://www.yesssr.com/auth/login',data=login_data,headers=head)
 print(r.text)
 print(r)
 rch=s.post('http://www.yesssr.com/user/checkin')
-print(rch.text)
 print(rch)
+if rch.status_code==200:
+  print('checkin successfully')
